@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: chatatp-studio-mcp
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: STUDIO_API_URL
+        value: https://chatatp-agent-builder-backend.onrender.com
+      - key: MCP_PATH
+        value: /studio/mcp
+      - key: MCP_STATELESS
+        value: "true"
+      - key: STUDIO_TOKEN
+        sync: false
