@@ -19,7 +19,6 @@ mcp = FastMCP(
         "and messaging platforms through the Studio dashboard API. "
         "Prefer list/get before update/delete. Destructive tools require confirm=true."
     ),
-    stateless_http=settings.STATLESS,
 )
 
 
